@@ -1,6 +1,10 @@
-<div class="bg-image" style="text-align:center">
+<div style="text-align:left">
 	<h1>{{ title }}</h1>
-	<button (click)="fetchPlanet()">Generate planets</button>
+	<router-outlet></router-outlet>
+	<!--<button (click)="fetchPlanet()">Show planets</button>
 	<hr />
-	<div *ngFor="let planet of planet$ | async">{{ planet.name }}</div>
+	<div *ngFor="let planet of planet$ | async"><span>Id: {{ planet.id }} Name: {{ planet.name }}</span></div>-->
 </div>
+
+
+<!--<span>Diameter: {{ planet.diameter }}</span><span>Gravity: {{ planet.gravity }}</span><span>Population: {{ planet.population }}</span><span>Climate: {{ planet.climate }}</span><span>Terrain: {{ planet.terrain }}</span>-->

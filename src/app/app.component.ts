@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
+
 import { Planet } from './planet.model';
 import { PlanetService } from './planet.service';
 
@@ -10,13 +11,14 @@ import { PlanetService } from './planet.service';
 })
 
 export class AppComponent {
-  planet$: Observable<Planet[]>;
+  //planet$: Observable<Planet[]>;
 
-  constructor(private planetService: PlanetService) {}
+  //constructor(private planetService: PlanetService) {}
 
-  fetchPlanet() {
-    this.planet$ = this.planetService.fetchPlanet();
-  }
+  //FETCHING DATA FROM ONE PAGE SWAPI(10 PLANETS ONLY)
+  /*fetchPlanet() {
+      this.planet$ = this.planetService.fetchPlanet(1);
+  }*/
 
   title = 'List of Planets';
 }

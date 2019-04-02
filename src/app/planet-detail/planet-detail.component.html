@@ -1,0 +1,22 @@
+<div *ngIf="planet">
+  <nav>
+    <button (click)="goBack()">go back</button>
+  </nav>
+  <h2>{{planet.name | uppercase}} Details</h2>
+  <div><span>Name: </span>{{planet.name}}</div>
+  <div><span>Diameter: </span>{{planet.diameter}}</div>
+  <div><span>Gravity: </span>{{planet.gravity}}</div>
+  <div><span>Population: </span>{{planet.population}}</div>
+  <div><span>Climate: </span>{{planet.climate}}</div>
+  <div><span>Terrain: </span>{{planet.terrain}}</div>
+  <div><span>url: </span>{{planet.url}}</div>
+</div>
+
+
+<!--
+  <div>
+    <label>name:
+      <input [(ngModel)]="planet.name" placeholder="name"/>
+    </label>
+  </div>
+-->

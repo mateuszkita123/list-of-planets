@@ -1,0 +1,9 @@
+<h2>StarWars API Planets</h2>
+<app-planet-search></app-planet-search>
+<ul class="planet">
+	<li *ngFor="let pl of planet">
+		<a routerLink="/detail/{{pl.id}}">
+			<span class="badge">{{ pl.id }}</span> {{ pl.name }}
+		</a>
+	</li>
+</ul>
