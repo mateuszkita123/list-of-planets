@@ -1,9 +1,17 @@
-<h2>StarWars API Planets</h2>
+<h1>SWAPI Planets</h1>
 <app-planet-search></app-planet-search>
+<h4>Select type of pagination[{{ items }}]:</h4>
+<span>
+	<button (click)="setTo5()">5</button>
+	<button (click)="setTo10()"> 10 </button>
+	<button (click)="setTo25()"> 25 </button>
+	<button (click)="setTo100()"> 100 </button>
+</span>
 <ul class="planet">
-	<li *ngFor="let pl of planet">
+	<li *ngFor="let pl of planet | paginate: { itemsPerPage:items, currentPage: page }">
 		<a routerLink="/detail/{{pl.id}}">
 			<span class="badge">{{ pl.id }}</span> {{ pl.name }}
 		</a>
 	</li>
 </ul>
+<pagination-controls class="my-pagination" (pageChange)="page =$event"></pagination-controls>

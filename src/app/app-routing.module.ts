@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { NgModule } 				from '@angular/core';
+import { RouterModule, Routes } 	from '@angular/router';
 
-import { PlanetComponent } from './planet/planet.component';
-import { PlanetDetailComponent }  from './planet-detail/planet-detail.component';
+import { PlanetComponent } 			from './planet/planet.component';
+import { PlanetDetailComponent }  	from './planet-detail/planet-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/planet', pathMatch: 'full' },

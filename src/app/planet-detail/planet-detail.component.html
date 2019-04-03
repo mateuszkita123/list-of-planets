@@ -1,22 +1,16 @@
 <div *ngIf="planet">
   <nav>
-    <button (click)="goBack()">go back</button>
+    <button (click)="goBack()">Go back</button>
   </nav>
   <h2>{{planet.name | uppercase}} Details</h2>
-  <div><span>Name: </span>{{planet.name}}</div>
-  <div><span>Diameter: </span>{{planet.diameter}}</div>
-  <div><span>Gravity: </span>{{planet.gravity}}</div>
-  <div><span>Population: </span>{{planet.population}}</div>
-  <div><span>Climate: </span>{{planet.climate}}</div>
-  <div><span>Terrain: </span>{{planet.terrain}}</div>
-  <div><span>url: </span>{{planet.url}}</div>
+  <div class="item"><label>Name: </label>{{planet.name}}</div>
+  <div class="item"><label>Diameter: </label>{{planet.diameter}}</div>
+  <div class="item"><label>Rotation period: </label>{{planet.rotation_period}}</div>
+  <div class="item"><label>Orbital Period: </label>{{planet.orbital_period}}</div>
+  <div class="item"><label>Gravity: </label>{{planet.gravity}}</div>
+  <div class="item"><label>Population: </label>{{planet.population}}</div>
+  <div class="item"><label>Climate: </label>{{planet.climate}}</div>
+  <div class="item"><label>Terrain: </label>{{planet.terrain}}</div>
+  <div class="item"><label>Surface water: </label>{{planet.surface_water}}</div>
+  <div class="item"><label>url: </label><a href={{planet.url}} target="_blank">{{planet.url}}</a></div>
 </div>
-
-
-<!--
-  <div>
-    <label>name:
-      <input [(ngModel)]="planet.name" placeholder="name"/>
-    </label>
-  </div>
--->

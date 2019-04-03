@@ -1,3 +1,7 @@
+h1
+  text-transform: uppercase
+  color: #000
+
 .planet
   text-align: left
   margin: 0 0 2em 0
@@ -45,14 +49,11 @@ button
   border: none
   padding: 5px 10px
   border-radius: 4px
+  margin: 5px
   cursor: pointer
   cursor: hand
-  font-family: Arial
   &:hover
     background-color: #cfd8dc
-  &.delete
-    position: relative
-    left: 194px
-    top: -32px
-    background-color: gray !important
-    color: white
+
+.my-pagination /deep/ .ngx-pagination .current 
+  background: #607D8B
